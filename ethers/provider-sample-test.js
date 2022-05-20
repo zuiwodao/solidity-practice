@@ -4,7 +4,7 @@ const { ethers } = require("hardhat");
 
 describe("Ethers", function () {
  it("For localhost JsonRpcProvider ", async function () {
-   const provider = new ethers.providers.JsonRpcProvider("http://localhost:9545");
+   const provider = new ethers.providers.JsonRpcProvider();
    const connection = provider.connection;
    console.log("connention",connection);
 
